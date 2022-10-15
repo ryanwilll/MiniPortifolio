@@ -9,43 +9,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/estilos.css">
-    <title>Mini Portifólio - Ryan Will</title>
+    <title>Cartão - Ryan Will</title>
 </head>
 <body>
     <main class="cartao"> <!---->
         <div class="minhas-informacoes">
             <img src="./src/imagens/foto-perfil.jpg" alt="Foto de Perfil">
-            <h1 class="nome">Rodrigo da Silva</h1>
+            <h1 class="nome">Ryan Will Darós</h1>
             <h2 class="cargo">Desenvolvedor Frontend Júnior</h2>
         </div>
 
         <div class="conteudo">
             <ul class="abas">
-                <li class="aba selecionado">
+                <li class="aba selecionado" id="sobre-mim">
                     <img src="./src/imagens/sobre-imagem.gif" alt="Gif aba Sobre">
                 </li>
-                <li class="aba">
+                <li class="aba" id="minhas-redes">
                     <img src="./src/imagens/redes-sociais.gif" alt="Gif aba Redes Sociais">
+                </li>
+                <li class="aba" id="meus-projetos">
+                    <img src="./src/imagens/projetos.gif" alt="Gif aba Projetos">
                 </li>
             </ul>
 
             <div class="informacoes-abas">
-                <div class="informacao selecionado">
+                <div class="informacao selecionado" id="informacao-sobre-mim">
                     <h3 class="sub-titulo">Sobre</h2>
 
                         <div class="descricao">
-                            <p>Oi! meu nome é Rodrigo da Silva, seja bem-vindo(a)!
+                            <p>Oi! meu nome é Ryan Will Darós e  seja bem-vindo(a)!
                             </p>
-                              <p>Sou uma pessoa apaixonada pela programação desde que eu tinha 15
+                              <p>Sou uma pessoa apaixonada pela programação desde que eu tinha 16
                                 anos. Sempre tive o sonho de trabalhar com programação e
-                                atualmente comecei a colocar esse sonho em prática estudando
+                                comecei a colocar esse sonho em prática estudando, atualmente estou no <span>
+                                3º Período do curso Análise e Desenvolvimento de Sistemas </span>
+                                e estou fazendo cursos para aperfeiçoar algumas linguagens, sendo elas:
                                 <span>HTML, CSS e JavaScript.</span> 
                                 Gosto muito de café (até demais), e meus principais hobbies são
-                                jogar MMO RPG, ver animes e séries.
+                                jogar, ver séries e filmes.
                             </p>
                         </div>
                 </div>
-                <div class="informacao">
+                <div class="informacao" id="informacao-minhas-redes">
                     <h3 class="sub-titulo">Minhas Redes</h3>
                     <ul class="redes-sociais">
                         <li>
@@ -59,8 +64,17 @@
                         </li>
                     </ul>
                 </div>
+                <div class="informacao" id="informacao-meus-projetos">
+                    <h3 class="sub-titulo">Meus Projetos</h3>
+                    <ul class="projetos">
+                        <li>
+                            <p class="em-breve">Em breve, por favor, aguarde!</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </main>
+    <script src="./src/js/index.js"></script>
 </body>
 </html>

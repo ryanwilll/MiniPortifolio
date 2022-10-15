@@ -1,5 +1,5 @@
 body{
-    background-image: url(../imagens/fundo-site.jpg);
+    background-image: url(../imagens/fundo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -10,16 +10,41 @@ body{
     justify-content: center;
     align-items: center;
     padding: 30px;
+    backdrop-filter: blur(0.8px);
 }
 
 
 .cartao{
     background-color: #070d12;
     width: 370px;
-    border: 2px solid #e126d9;
-    border-radius: 10px;
     overflow: hidden;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+    border: 1px solid rgba(255, 255, 255, 0.19);
+    
 }
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #8f54a0;
+    
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #8f54a0;
+    border-radius: 30px;
+    border: 3px solid #8f54a0;
+    
+  }
 
 
 .cartao .minhas-informacoes{
@@ -30,10 +55,14 @@ body{
     gap: 10px;
 }
 
+
 .cartao .minhas-informacoes img{
     border-radius: 50px;
     border: 4px solid #02d08f;
+    
+    
 }
+
 
 .cartao .minhas-informacoes .nome{
     font-size: 26px;
@@ -60,8 +89,9 @@ body{
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
+    cursor:pointer;
+    transition: background-color 0.4s ease-in-out;
+
 }
 
 .cartao .abas img{
@@ -105,6 +135,7 @@ body{
     max-height: 180px;
     overflow-y: auto;
     padding-right: 15px;
+    
 }
 
 .informacoes-abas .descricao span{

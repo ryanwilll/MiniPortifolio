@@ -73,6 +73,11 @@ body{
     color: #b8bbc5;
 }
 
+.cartao .foto-perfil{
+
+    width: 96px;
+    height: 96px;
+}
 
 .cartao .conteudo .abas{
     display: flex;
@@ -186,3 +191,4 @@ body{
     text-align: center;
     padding-top: 25%;
 }
+

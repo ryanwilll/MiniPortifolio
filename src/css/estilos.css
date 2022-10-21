@@ -28,6 +28,7 @@ body {
   backdrop-filter: blur(4.8px);
   -webkit-backdrop-filter: blur(4.8px);
   border: 1px solid rgba(255, 255, 255, 0.19);
+  scroll-behavior: smooth;
 }
 /* Firefox */
 * {
@@ -133,6 +134,7 @@ body {
   font-size: 16px;
   max-height: 180px;
   overflow-y: auto;
+  scroll-behavior: smooth;
   padding-right: 15px;
 }
 
@@ -147,6 +149,7 @@ body {
   align-items: center;
   max-height: 180px;
   overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 .informacoes-abas .redes-sociais li a {
@@ -157,13 +160,20 @@ body {
   padding: 7px;
   font-size: 20px;
   max-height: 180px;
+  box-sizing: border-box;
+  border-radius: 0.6rem;
 }
 .informacao .redes-sociais .icon {
   position: relative;
-
   top: 0.25rem;
   right: 0.3rem;
 }
+.informacao .projetos .icon {
+  position: relative;
+  top: 0.25rem;
+  right: 0.3rem;
+}
+
 .informacoes-abas .redes-sociais li a:hover {
   opacity: 0.6;
   transition: opacity 0.3s ease-in-out;
@@ -238,6 +248,7 @@ body {
 }
 
 .projetos li a {
+  border-radius: 0.6rem;
   display: flex;
   justify-content: center;
   padding-bottom: 1rem;
@@ -256,7 +267,7 @@ body {
   display: block;
   color: #f3f3f3;
   text-align: center;
-  padding: 10px;
+  padding: 7px;
   font-size: 20px;
   max-height: 180px;
   overflow: auto;

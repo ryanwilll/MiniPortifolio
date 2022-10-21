@@ -1,194 +1,276 @@
-body{
-    background-image: url(../imagens/fundo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    font-family: 'css2', sans-serif;
-    color:white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    backdrop-filter: blur(0.8px);
+body {
+  background-image: url(../imagens/fundo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  font-family: "css2", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  backdrop-filter: blur(0.8px);
 }
 
-
-.cartao{
-    background-color: #070d12;
-    width: 370px;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.07);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4.8px);
-    -webkit-backdrop-filter: blur(4.8px);
-    border: 1px solid rgba(255, 255, 255, 0.19);
-    
-}
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #8f54a0;
-  }
-
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 6px;
-    background-color: #313131;
-    border: 1px solid #313131;
-    border-radius: 10px;
-  }
-
-
-  *::-webkit-scrollbar-thumb {
-    border-radius: 30px;
-    border: 3px solid #8f54a0;
-    background-color: #8f54a0 ;    
-  }
-
-
-.cartao .minhas-informacoes{
-    padding-top: 20px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+.center {
+  width: 960px;
+  margin: 0 auto;
 }
 
-
-.cartao .minhas-informacoes img{
-    border-radius: 50px;
-    border: 4px solid #02d08f;    
+.cartao {
+  background-color: #070d12;
+  width: 370px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.8px);
+  -webkit-backdrop-filter: blur(4.8px);
+  border: 1px solid rgba(255, 255, 255, 0.19);
+}
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #8f54a0;
 }
 
-
-.cartao .minhas-informacoes .nome{
-    font-size: 26px;
-
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+  background-color: #313131;
+  border: 1px solid #313131;
+  border-radius: 10px;
 }
 
-.cartao .minhas-informacoes .cargo{
-    font-size: 20px;
-    color: #b8bbc5;
+*::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  border: 3px solid #8f54a0;
+  background-color: #8f54a0;
 }
 
-.cartao .foto-perfil{
-
-    width: 96px;
-    height: 96px;
+.cartao .minhas-informacoes {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-.cartao .conteudo .abas{
-    display: flex;
-    justify-content: center;
+.cartao .minhas-informacoes img {
+  border-radius: 50px;
+  border: 4px solid #02d08f;
 }
 
-.cartao .conteudo{
-    margin-top: 15px;
+.cartao .minhas-informacoes .nome {
+  font-size: 26px;
 }
 
-.cartao .abas .aba{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    cursor:pointer;
-    transition: background-color 0.4s ease-in-out;
-
+.cartao .minhas-informacoes .cargo {
+  font-size: 20px;
+  color: #b8bbc5;
 }
 
-.cartao .abas img{
-    width: 30px;
-
+.cartao .foto-perfil {
+  width: 96px;
+  height: 96px;
 }
 
-.cartao .abas .aba.selecionado{
-    background-color: #262626;
+.cartao .conteudo .abas {
+  display: flex;
+  justify-content: center;
 }
 
-.cartao .informacoes-abas{
-    background-color: #262626;
-    
+.cartao .conteudo {
+  margin-top: 15px;
 }
 
-.cartao .abas .aba:hover{
-    background-color: #414141;
+.cartao .abas .aba {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
 }
 
-.informacoes-abas .informacao{
-    min-height: 300px;
-    padding: 15px;
+.cartao .abas img {
+  width: 30px;
 }
 
-.informacoes-abas .informacao{
-    display: none;
+.cartao .abas .aba.selecionado {
+  background-color: #262626;
 }
 
-.informacoes-abas .informacao.selecionado{
-    display: block;
+.cartao .informacoes-abas {
+  background-color: #262626;
 }
 
-.informacoes-abas .sub-titulo{
-    font-size: 18px;
-    margin-bottom: 25px;
-    text-align: center;
+.cartao .abas .aba:hover {
+  background-color: #414141;
 }
 
-.informacoes-abas .descricao{
-    font-size: 16px;
-    max-height: 180px;
-    overflow-y: auto;
-    padding-right: 15px;
-    
+.informacoes-abas .informacao {
+  min-height: 300px;
+  padding: 15px;
 }
 
-.informacoes-abas .descricao span{
-    color:#02d08f;
+.informacoes-abas .informacao {
+  display: none;
 }
 
-.informacoes-abas .redes-sociais{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    align-items: center;
+.informacoes-abas .informacao.selecionado {
+  display: block;
 }
 
-.informacoes-abas .redes-sociais li a{
-    width: 250px;
-    display: block;
-    color: #f3f3f3;
-    text-align: center;
-    padding: 10px;
-    font-size: 20px;
-    max-height: 180px;
-    overflow: auto;
+.informacoes-abas .sub-titulo {
+  font-size: 18px;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
-.informacoes-abas .redes-sociais li a:hover{
-    opacity: 0.6;
-    transition: opacity 0.3s ease-in-out;
-
+.informacoes-abas .descricao {
+  font-size: 16px;
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 15px;
 }
 
-
-.cartao .redes-sociais .curriculo{
-    background-color: #02d08f;
-
+.informacoes-abas .descricao span {
+  color: #02d08f;
 }
 
-.cartao .redes-sociais .linkedin{
-    background-color: #1d87bd;
-    
+.informacoes-abas .redes-sociais {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  max-height: 180px;
+  overflow-y: auto;
 }
 
-.cartao .redes-sociais .github{
-    background-color: #545454;
+.informacoes-abas .redes-sociais li a {
+  width: 250px;
+  display: block;
+  color: #f3f3f3;
+  text-align: center;
+  padding: 7px;
+  font-size: 20px;
+  max-height: 180px;
+}
+.informacao .redes-sociais .icon {
+  position: relative;
+
+  top: 0.25rem;
+  right: 0.3rem;
+}
+.informacoes-abas .redes-sociais li a:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.cartao .informacao .em-breve{
-    font-size: 18px;
-    text-align: center;
-    padding-top: 25%;
+.cartao .redes-sociais .curriculo {
+  background: linear-gradient(-120deg, #8892be, #4f5b93, #99cc99);
 }
 
+.cartao .redes-sociais .linkedin {
+  background: linear-gradient(
+    45deg,
+    #0077b5,
+    #000000,
+    #313335,
+    #86888a,
+    #caccce,
+    #00a0dc
+  );
+}
+
+.cartao .redes-sociais .github {
+  background: linear-gradient(
+    45deg,
+    #4078c0,
+    #6e5494,
+    #bd2c00,
+    #c9510c,
+    #6cc644,
+    #fafafa
+  );
+}
+
+.cartao .redes-sociais .instagram {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+}
+.cartao .redes-sociais .twitter {
+  background: linear-gradient(
+    45deg,
+    #66757f,
+    #00acee,
+    #36d8ff,
+    #a0bbce,
+    #b7d7df
+  );
+}
+
+.cartao .redes-sociais .whatsapp {
+  background: linear-gradient(
+    45deg,
+    #20af9a,
+    #1ebea5,
+    #10d68a,
+    #31b173,
+    #0cc76d,
+    #06f581
+  );
+}
+
+.cartao .informacao .em-breve {
+  font-size: 18px;
+  text-align: center;
+  padding-top: 25%;
+}
+
+.projetos li a {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  color: white;
+}
+/* PROJETOS */
+.informacoes-abas .informacao .projetos {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.informacoes-abas .informacao .projetos li a {
+  width: 250px;
+  display: block;
+  color: #f3f3f3;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  max-height: 180px;
+  overflow: auto;
+}
+
+.informacoes-abas .informacao .projetos li a:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.informacoes-abas .informacao .projetos .compras {
+  background: linear-gradient(-120deg, #92bbdf, #5ecc62, #00ad45);
+}
+
+.informacoes-abas .informacao .projetos .site-simples {
+  background: linear-gradient(120deg, #664983, #632e99, #8000ff);
+}

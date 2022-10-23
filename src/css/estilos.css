@@ -285,3 +285,7 @@ body {
 .informacoes-abas .informacao .projetos .site-simples {
   background: linear-gradient(120deg, #664983, #632e99, #8000ff);
 }
+
+.informacoes-abas .informacao .projetos .qrcode-layout {
+  background: linear-gradient(120deg, #2da9d7, #212a3e);
+}

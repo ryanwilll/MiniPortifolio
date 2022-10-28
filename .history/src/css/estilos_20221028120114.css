@@ -252,6 +252,7 @@ body {
   justify-content: center;
   padding-bottom: 1rem;
   color: white;
+  overflow-y: auto;
 }
 /* PROJETOS */
 .informacoes-abas .informacao .projetos {
@@ -259,9 +260,6 @@ body {
   flex-direction: column;
   gap: 25px;
   align-items: center;
-  max-height: 180px;
-  overflow-y: auto;
-  scroll-behavior: smooth;
 }
 
 .informacoes-abas .informacao .projetos li a {
@@ -292,5 +290,5 @@ body {
 }
 
 .informacoes-abas .informacao .projetos .faq-layout {
-  background: linear-gradient(120deg, #ff0000, #a19696);
+  background: linear-gradient(120deg, #ff0000, #ffffff);
 }

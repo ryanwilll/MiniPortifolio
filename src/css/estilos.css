@@ -294,3 +294,13 @@ body {
 .informacoes-abas .informacao .projetos .faq-layout {
   background: linear-gradient(120deg, #ff0000, #a19696);
 }
+
+.informacoes-abas .informacao .projetos .huddle-layout {
+  background: linear-gradient(120deg, #42b883, #35495e);
+}
+.informacoes-abas .informacao .projetos .stats-preview {
+  background: linear-gradient(120deg, #355ebe, #d52b1d);
+}
+.informacoes-abas .informacao .projetos .nlw-copa {
+  background: linear-gradient(120deg, #0098db, #ecc400);
+}

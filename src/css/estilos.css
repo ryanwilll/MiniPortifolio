@@ -304,3 +304,6 @@ body {
 .informacoes-abas .informacao .projetos .nlw-copa {
   background: linear-gradient(120deg, #0098db, #ecc400);
 }
+.informacoes-abas .informacao .projetos .pearson-hardman {
+  background: linear-gradient(-120deg, #ed6b06, #9d1348, #008b5d, #364395);
+}

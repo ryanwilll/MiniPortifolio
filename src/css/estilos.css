@@ -307,3 +307,6 @@ body {
 .informacoes-abas .informacao .projetos .pearson-hardman {
   background: linear-gradient(-120deg, #ed6b06, #9d1348, #008b5d, #364395);
 }
+.informacoes-abas .informacao .projetos .google-keep {
+  background: linear-gradient(-120deg, #1e5397, #376db6, #4ca2da, #91d8f4);
+}
